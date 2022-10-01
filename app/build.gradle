@@ -22,6 +22,10 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
+
+    // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
+    implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.1.SP1.RELEASE'
+
 }
 
 application {
