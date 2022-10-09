@@ -31,4 +31,8 @@ public class Module {
         }
         return Integer.toString(students.length) + " Students Listed";
     }
+
+    public String toString(){    //overriding the toString() method
+        return moduleName+" "+ associatedCourses +" "+lecturer+" "+students;  
+       } 
 }

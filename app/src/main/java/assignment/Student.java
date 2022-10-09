@@ -47,4 +47,8 @@ public class Student {
         username = forename + surname + Integer.toString(age); //Change to Joda time when implemented. Should concat AGE not dob
         return username; 
     }
+
+    public String toString(){
+        return forename+" "+surname+" "+course+" "+modules+" "+dob+" "+age+" "+id;
+    }
 }

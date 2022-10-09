@@ -1,4 +1,6 @@
 package assignment;
+import java.util.Arrays;
+
 import org.joda.time.*;
 //import com.google.common.util.concurrent.Service.State;
 
@@ -28,11 +30,16 @@ public class Course {
         return endDate;
     }
 
-    public Module[] getModules(){
-        return modules;
+    public String getModules(){
+        return Arrays.toString(modules);
     }
 
     public Student[] getStudents(){
         return students;
     }
+
+    public String toString(){    //overriding the toString() method
+        return courseName+" "+ startDate +" "+endDate+" "+modules.toString()+" "+students.toString();  
+       } 
+
 }

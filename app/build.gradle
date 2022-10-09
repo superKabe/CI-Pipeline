@@ -10,6 +10,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
+apply plugin: "war"
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -30,7 +31,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'assignment.App'
+    mainClass = 'unitTest.app'
 }
 
 tasks.named('test') {
